@@ -1,4 +1,5 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
+# Main Template file for the login static view
 def index(request):
-    return HttpResponse("Hello, world. You're at the reporting index.")
+    return render(request, 'reporting/index.html')
