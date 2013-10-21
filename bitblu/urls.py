@@ -7,7 +7,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    url(r'^$', 'reporting.views.index', name='index'),
+    url(r'^$', 'reporting.views.base', name='base'),
     url(r'^reporting/', include('reporting.urls', namespace="reporting")),
 
     # Uncomment the admin/doc line below to enable admin documentation:
@@ -16,6 +16,9 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
 
-    # User Auth Url's
-    url(r'^reporting/login/', 'bitblu.views.login'),
+
+
+
+    #url(r'^reporting/', include('registration.backends.default.urls')),
+
 )

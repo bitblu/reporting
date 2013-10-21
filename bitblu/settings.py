@@ -125,6 +125,8 @@ INSTALLED_APPS = (
     'reporting',
 )
 
+ACCOUNT_ACTIVATION_DAYS = 7
+
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
 
 # A sample logging configuration. The only tangible logging
